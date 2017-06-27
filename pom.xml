@@ -19,6 +19,17 @@
         <report.fail.on.error>false</report.fail.on.error>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>bintray</id>
+            <url>https://api.bintray.com/maven/openhab/mvn/openhab2-addons/;publish=1</url>
+        </repository>
+        <snapshotRepository>
+            <id>jfrog</id>
+            <url>https://openhab.jfrog.io/openhab/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <build>
         <testSourceDirectory>src/test</testSourceDirectory>
         
